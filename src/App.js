@@ -10,14 +10,12 @@ import Footer from "./components/footer"
 
 function App() {
   return (
-      <div>
-          <main className="flex-shrink-0">
-              <Header />
-              <About />
-              <Projects/>
-              <Footer />
-          </main>
-      </div>
+      <>
+          <Header />
+          <About />
+          <Projects/>
+          <Footer />
+      </>
   );
 }
 
