@@ -26,52 +26,49 @@ const projectsData = [
 
 const Projects = () => {
     return (
-        <main className="flex-shrink-0">
-            <section className="py-5">
-                <Container className="px-5 mb-5">
-                    <div className="text-center mb-5">
-                        <h1 className="display-5 fw-bolder mb-0">
-                            <span className="text-gradient d-inline">Projects</span>
-                        </h1>
-                    </div>
-                    <Row className="gx-5 justify-content-center">
+        <section id="projects" className="py-5">
+            <Container className="px-3 px-md-5 mb-4">
+                <div className="text-center mb-5">
+                    <h1 className="display-5 fw-bolder mb-0">
+                        <span className="text-gradient d-inline">Projects</span>
+                    </h1>
+                </div>
+                <Row className="gx-5 justify-content-center">
+                    {
+                        projectsData.map(data =>
 
-                        {
-                            projectsData.map(data =>
-
-                                <Col lg={11} xl={9} xxl={8}>
-                                    <Card className="overflow-hidden shadow rounded-4 border-0 mb-5">
-                                        <Card.Body className="card-body">
-                                            <Row>
-                                                <Col xs={8} className="px-5 py-5">
-                                                    <h2 className="fw-bolder">
-                                                        {data.title}
-                                                    </h2>
-                                                    <div>
-                                                        <p>
-                                                            {data.description}
-                                                        </p>
-                                                        <a href={data.liveDemo} target="_blank">
-                                                            <Button variant="dark"><TbWorldWww /> Live Demo</Button>
-                                                        </a>
-                                                        <a href={data.sourceCode} target="_blank">
-                                                            <Button variant="light"><AiFillGithub /> Source Code</Button>
-                                                        </a>
-                                                    </div>
-                                                </Col>
-                                                <Col xs={4}>
-                                                    <img src={data.image} className="img-fluid rounded" />
-                                                </Col>
-                                            </Row>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                            )
-                        }
-                    </Row>
-                </Container>
-            </section>
-        </main>
+                            <Col xs={12} md={12} lg={9}>
+                                <Card className="overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <Card.Body className="card-body">
+                                        <Row>
+                                            <Col xs={9} className="px-3 px-md-5 py-3 py-md-5">
+                                                <h2 className="fw-bolder">
+                                                    {data.title}
+                                                </h2>
+                                                <p className="mt-3 mb-4">
+                                                    {data.description}
+                                                </p>
+                                                <div>
+                                                    <a href={data.liveDemo} target="_blank">
+                                                        <Button variant="dark"><TbWorldWww /> Live Demo</Button>
+                                                    </a>
+                                                    <a href={data.sourceCode} target="_blank">
+                                                        <Button variant="light"><AiFillGithub /> Source Code</Button>
+                                                    </a>
+                                                </div>
+                                            </Col>
+                                            <Col xs={3}>
+                                                <img src={data.image} className="img-fluid rounded" />
+                                            </Col>
+                                        </Row>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        )
+                    }
+                </Row>
+            </Container>
+        </section>
     );
 };
 

@@ -1,32 +1,39 @@
 import React from 'react';
+import {Container, Row, Col} from "react-bootstrap";
+import {settings} from "../config";
 
 const Footer = () => {
     return (
-        <footer className="bg-white pt-4 mt-auto">
+        <footer className="bg-white">
 
             <section className="py-5 bg-gradient-primary-to-secondary text-white">
-                <div className="container px-5 my-5">
+                <Container className="px-5 my-5">
                     <div className="text-center">
                         <h2 className="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a className="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact
-                            me</a>
+                        <a className="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
+                           href={settings.linkedinUrl} target="_blank">
+                            Contact me
+                        </a>
                     </div>
-                </div>
+                </Container>
             </section>
-            <div className="container px-5 py-3">
-                <div className="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div className="col-auto">
-                        <div className="small m-0">Copyright &copy; Your Website 2023</div>
-                    </div>
-                    <div className="col-auto">
+            <Container id="contact" className="px-5 py-3">
+                <Row className="align-items-center justify-content-between">
+                    <Col>
+                        <div className="small m-0">
+                            Copyright &copy;
+                            <a href={settings.websiteUrl} target="_blank">batuhanozturk.com</a>
+                        </div>
+                    </Col>
+                    <Col className="text-end">
                         <a className="small" href="#!">Privacy</a>
                         <span className="mx-1">&middot;</span>
                         <a className="small" href="#!">Terms</a>
                         <span className="mx-1">&middot;</span>
-                        <a className="small" href="#!">Contact</a>
-                    </div>
-                </div>
-            </div>
+                        <a className="small" href={settings.linkedinUrl} target="_blank">Contact</a>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     );
 };

@@ -1,15 +1,15 @@
 import React from 'react';
-import profileImg from "../images/BatuhanOzturk-CV-Photo.png";
 import {Container, Row, Col} from "react-bootstrap";
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
+import {settings} from "../config";
 
 const About = () => {
     return (
-        <section className="bg-light py-5">
+        <section id="about" className="bg-light py-5">
             <Container className="px-5">
                 <Row className="gx-5 justify-content-center">
-                    <Col xs={8}>
-                        <div className="text-center my-5">
+                    <Col xs={10} md={8}>
+                        <div className="text-center mt-3 mb-5">
                             <h2 className="display-5 fw-bolder">
                                 <span className="text-gradient d-inline">Batuhan Ozturk</span>
                             </h2>
@@ -29,14 +29,12 @@ const About = () => {
                             </p>
 
                             <div className="d-flex justify-content-center fs-2 gap-4">
-                                <a className="text-gradient" href="#!"><i className="bi bi-twitter"></i></a>
-                                <a href="https://www.linkedin.com/in/-batuhan" target="_blank">
-                                    <AiFillLinkedin size="2em" />
+                                <a href={settings.linkedinUrl} target="_blank">
+                                    <AiFillLinkedin size="1.75em" />
                                 </a>
-                                <a href="https://github.com/fbatuhanr" target="_blank">
-                                    <AiFillGithub size="2em" />
+                                <a href={settings.githubUrl} target="_blank">
+                                    <AiFillGithub size="1.75em" />
                                 </a>
-                                <a className="text-gradient" href="#!"><i className="bi bi-github"></i></a>
                             </div>
                         </div>
                     </Col>

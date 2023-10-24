@@ -13,7 +13,7 @@ function App() {
       <>
           <Header />
           <About />
-          <Projects/>
+          <Projects />
           <Footer />
       </>
   );
