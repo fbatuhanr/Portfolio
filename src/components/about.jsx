@@ -6,7 +6,7 @@ import {settings} from "../config";
 const About = () => {
     return (
         <section id="about" className="bg-light py-5">
-            <Container className="px-5">
+            <Container className="pt-1 px-5">
                 <Row className="gx-5 justify-content-center">
                     <Col xs={10} md={8}>
                         <div className="text-center mt-3 mb-5">

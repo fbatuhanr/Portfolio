@@ -27,7 +27,7 @@ const projectsData = [
 const Projects = () => {
     return (
         <section id="projects" className="py-5">
-            <Container className="px-3 px-md-5 mb-4">
+            <Container className="pt-1 px-3 px-md-5 mb-4">
                 <div className="text-center mb-5">
                     <h1 className="display-5 fw-bolder mb-0">
                         <span className="text-gradient d-inline">Projects</span>
