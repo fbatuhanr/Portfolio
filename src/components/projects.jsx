@@ -21,7 +21,7 @@ const projectsData = [
         description: "Car rental website created by React",
         image: rentacarImg,
         technologies: [<FaReact title="React"/>, <FaBootstrap title="Bootstrap" />],
-        liveDemo: "https://rent-a-car-reactjs.vercel.app",
+        liveDemo: "https://rentacar-reactjs.vercel.app",
         sourceCode: "https://github.com/fbatuhanr/RentaCar-ReactJS"
     },
     {
