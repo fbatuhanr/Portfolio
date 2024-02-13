@@ -20,7 +20,7 @@ const projectsData = [
         title: "Rent a Car",
         description: "Car rental website created by React",
         image: rentacarImg,
-        technologies: [<FaReact title="React"/>, <FaBootstrap title="Bootstrap" />],
+        technologies: [<FaReact title="React"/>, <IoLogoFirebase title="Firebase"/>, <FaBootstrap title="Bootstrap" />],
         liveDemo: "https://rentacar-reactjs.vercel.app",
         sourceCode: "https://github.com/fbatuhanr/RentaCar-ReactJS"
     },
