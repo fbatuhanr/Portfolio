@@ -3,6 +3,7 @@ import {Container, Row, Col, Card, Button} from "react-bootstrap";
 import {TbWorldWww} from "react-icons/tb";
 import {AiFillGithub} from "react-icons/ai";
 
+import smoothlyshoppingImg from "../assets/projects/smoothlyshopping.jpg"
 import rentacarImg from "../assets/projects/rentacar.jpg"
 import shoppingcartImg from "../assets/projects/shoppingcart.jpg"
 import photogalleryImg from "../assets/projects/photogallery.jpg"
@@ -10,17 +11,23 @@ import profilemanagementImg from "../assets/projects/profilemanagement.jpg"
 import weatherforecastImg from "../assets/projects/weatherforecast.jpg"
 import calculatorImg from "../assets/projects/calculator.jpg"
 
-import {FaBootstrap, FaNodeJs, FaReact} from "react-icons/fa";
-import {IoLogoFirebase} from "react-icons/io5";
-import {SiAxios, SiFramer, SiMongodb} from "react-icons/si";
+import {SiReact, SiNextdotjs, SiTypescript, SiPrisma, SiMongodb, SiTailwindcss, SiFirebase, SiBootstrap, SiNodedotjs, SiAxios, SiFramer} from "react-icons/si";
 
 
 const projectsData = [
     {
+        title: "Smoothly Shopping",
+        description: "E-commerce website using Next.js, Typescript, Prisma, MongoDb, Tailwindcss, Firebase",
+        image: smoothlyshoppingImg,
+        technologies: [<SiNextdotjs title="Next.js"/>, <SiTypescript title="Typescript"/>, <SiPrisma title="Prisma"/>, <SiMongodb title="MongoDB"/>, <SiTailwindcss title="Tailwindcss"/>, <SiFirebase title="Firebase"/>],
+        liveDemo: "https://rentacar-reactjs.vercel.app",
+        sourceCode: "https://github.com/fbatuhanr/RentaCar-ReactJS"
+    },
+    {
         title: "Rent a Car",
-        description: "Car rental website created by React",
+        description: "Car rental website created with React, Bootstrap and Google Firebase",
         image: rentacarImg,
-        technologies: [<FaReact title="React"/>, <IoLogoFirebase title="Firebase"/>, <FaBootstrap title="Bootstrap" />],
+        technologies: [<SiReact title="React"/>, <SiFirebase title="Firebase"/>, <SiBootstrap title="Bootstrap" />],
         liveDemo: "https://rentacar-reactjs.vercel.app",
         sourceCode: "https://github.com/fbatuhanr/RentaCar-ReactJS"
     },
@@ -28,7 +35,7 @@ const projectsData = [
         title: "Shopping Cart",
         description: "Shopping Cart is E-commerce website application created by React",
         image: shoppingcartImg,
-        technologies: [<FaReact title="React"/>, <FaBootstrap title="Bootstrap"/>],
+        technologies: [<SiReact title="React"/>, <SiBootstrap title="Bootstrap"/>],
         liveDemo: "https://shopping-cart-reactjs-seven.vercel.app/",
         sourceCode: "https://github.com/fbatuhanr/shoppingcart-reactjs"
     },
@@ -36,28 +43,28 @@ const projectsData = [
         title: "Photo Gallery",
         description: "A simple Photo Gallery app created with React and Google Firebase!",
         image: photogalleryImg,
-        technologies: [<FaReact title="React"/>, <IoLogoFirebase title="Firebase"/>, <SiFramer title="Framer Motion"/>],
+        technologies: [<SiReact title="React"/>, <SiFirebase title="Firebase"/>, <SiFramer title="Framer Motion"/>],
         sourceCode: "https://github.com/fbatuhanr/PhotoGallery-ReactJS"
     },
     {
         title: "Profile Management",
         description: "Create your profile and customize your preferences, and browse other created profiles.",
         image: profilemanagementImg,
-        technologies: [<FaReact title="React"/>, <FaBootstrap title="Bootstrap"/>, <FaNodeJs title="NodeJs"/>, <SiMongodb title="MongoDb"/>],
+        technologies: [<SiReact title="React"/>, <SiBootstrap title="Bootstrap"/>, <SiNodedotjs title="NodeJs"/>, <SiMongodb title="MongoDb"/>],
         sourceCode: ["https://github.com/fbatuhanr/Profile-Management-Frontend", "https://github.com/fbatuhanr/Profile-Management-Backend"]
     },
     {
         title: "Weather Forecast",
         description: "Weather Forecast application created with React and by using 'openweathermap' and 'geodb-cities' apis.",
         image: weatherforecastImg,
-        technologies: [<FaReact title="React"/>, <FaBootstrap title="Bootstrap"/>, <SiAxios title="Axios"/>],
+        technologies: [<SiReact title="React"/>, <SiBootstrap title="Bootstrap"/>, <SiAxios title="Axios"/>],
         sourceCode: "https://github.com/fbatuhanr/WeatherForecast-ReactJS"
     },
     {
         title: "Calculator",
         description: "This calculator simple to use and functional also it has full responsive design and it supports keyboard inputs.",
         image: calculatorImg,
-        technologies: [<FaReact title="React"/>, <FaBootstrap title="Bootstrap"/>, <SiFramer title="Framer Motion"/>],
+        technologies: [<SiReact title="React"/>, <SiBootstrap title="Bootstrap"/>, <SiFramer title="Framer Motion"/>],
         sourceCode: "https://github.com/fbatuhanr/Calculator-ReactJS"
     }
 ]
