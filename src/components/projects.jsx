@@ -20,8 +20,7 @@ const projectsData = [
         description: "E-commerce website using Next.js, Typescript, Prisma, MongoDb, Tailwindcss, Firebase",
         image: smoothlyshoppingImg,
         technologies: [<SiNextdotjs title="Next.js"/>, <SiTypescript title="Typescript"/>, <SiPrisma title="Prisma"/>, <SiMongodb title="MongoDB"/>, <SiTailwindcss title="Tailwindcss"/>, <SiFirebase title="Firebase"/>],
-        liveDemo: "https://rentacar-reactjs.vercel.app",
-        sourceCode: "https://github.com/fbatuhanr/RentaCar-ReactJS"
+        sourceCode: "https://github.com/fbatuhanr/SmoothlyShopping/"
     },
     {
         title: "Rent a Car",
@@ -84,7 +83,7 @@ const Projects = () => {
                             <Col xs={12} md={12} lg={9}>
                                 <Card className="overflow-hidden shadow rounded-4 border-0 mb-5">
                                     <Card.Body className="card-body">
-                                        <Row>
+                                        <Row className="align-items-center">
                                             <Col xs={9} className="px-3 px-md-5 py-3 py-md-5">
                                                 <h2 className="fw-bolder">
                                                     {data.title}
