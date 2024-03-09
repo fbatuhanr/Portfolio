@@ -20,7 +20,6 @@ const projectsData = [
         description: "E-commerce website using Next.js, Typescript, Prisma, MongoDb, Tailwindcss, Firebase",
         image: smoothlyshoppingImg,
         technologies: [<SiNextdotjs title="Next.js"/>, <SiTypescript title="Typescript"/>, <SiPrisma title="Prisma"/>, <SiMongodb title="MongoDB"/>, <SiTailwindcss title="Tailwindcss"/>, <SiFirebase title="Firebase"/>],
-        liveDemo: "https://smoothly-shopping.vercel.app",
         sourceCode: "https://github.com/fbatuhanr/SmoothlyShopping"
     },
     {
