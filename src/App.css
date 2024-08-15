@@ -105,11 +105,13 @@ a {
     color: var(--bs-link-color);
     text-decoration: underline;
 }
+
 a:hover {
     color: var(--bs-link-hover-color);
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
     color: inherit;
     text-decoration: none;
 }
@@ -123,4 +125,16 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     background: -webkit-linear-gradient(315deg, #1524c7 0%, #1edde2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.video-box:hover {
+    cursor: pointer;
+}
+.video-box:hover .video-box-overlay {
+    opacity: 0 !important;
+    transition: opacity 0.5s ease;
+}
+.video-box:hover .video-box-icon {
+    transform: scale(1.1) !important;
+    transition: scale 0.5s ease;
 }

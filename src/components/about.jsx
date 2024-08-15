@@ -17,15 +17,8 @@ const About = () => {
                                 WEB Developer
                             </p>
                             <p className="text-muted">
-                                Highly skilled web developer with expertise in HTML, CSS, and Bootstrap, driving
-                                visually captivating and user-centric designs.
-                                Proficient in the previously outdated jQuery library, bringing a holistic approach
-                                to web development.
-                                Confident in JavaScript, adept at crafting efficient and dynamic applications
-                                using React and Node.js.
-                                Experienced in MongoDB and Mongoose for seamless database management.
-                                Proven track record of creating and showcasing numerous projects on GitHub
-                                and personal website.
+                            Eager to apply my dynamic skill set to contribute effectively to innovative web development projects. 
+                            Strong in problem solving and trying to put what he has learned into practice.
                             </p>
 
                             <div className="d-flex justify-content-center fs-2 gap-4">

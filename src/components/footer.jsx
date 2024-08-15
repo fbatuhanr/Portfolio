@@ -21,14 +21,14 @@ const Footer = () => {
                 <Row className="align-items-center justify-content-between">
                     <Col>
                         <div className="small m-0">
-                            Copyright &copy;
-                            <a href={settings.websiteUrl} target="_blank">batuhanozturk.com</a>
+                            Copyright &copy;&nbsp;
+                            <a href={settings.websiteUrl}>batuhanozturk.com</a>
                         </div>
                     </Col>
                     <Col className="text-end">
-                        <a className="small" href="#!">Privacy</a>
+                        <a className="small opacity-50" onclick="return false;">Privacy</a>
                         <span className="mx-1">&middot;</span>
-                        <a className="small" href="#!">Terms</a>
+                        <a className="small opacity-50" onclick="return false;">Terms</a>
                         <span className="mx-1">&middot;</span>
                         <a className="small" href={settings.linkedinUrl} target="_blank">Contact</a>
                     </Col>
